@@ -19,7 +19,7 @@ alias golo='git log '
 
 
 # Put version managers (e.g. rbenv) here
-
+eval "$(rbenv init -)"
 
 ### PATHS ###
 # I got nothing yet
