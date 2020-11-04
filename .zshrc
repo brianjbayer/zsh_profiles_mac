@@ -2,6 +2,8 @@
 # Z shell for MacOS profile
 ###################################
 
+### ENV ###
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 
 ### ALIASES ###
 alias lsa='ls -al '
