@@ -9,5 +9,5 @@ Contains a basic `.zshrc` "Z shell" user profile
 
 ###To softlink:
 ln -s *source* *new-link*  
-`$ ln -s zsh_profiles/.zshrc .zshrc`  
+`$ ln -s zsh_profiles_mac/.zshrc .zshrc`  
 

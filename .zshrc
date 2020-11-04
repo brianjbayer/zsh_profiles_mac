@@ -30,9 +30,8 @@ alias golo='git log '
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
-export -f parse_git_branch
 # NOTE: PROMPT_SUBST must be set for variable/special character
 # expansion
 setopt PROMPT_SUBST
 # Prompt:username@shorthostname currentdirectoryonly (gitbranchname)% 
-export PROMPT='%n@%m %1~%F{green}$(parse_git_branch)%f%# '
+PROMPT='%n@%m %1~%F{green}$(parse_git_branch)%f%# '
