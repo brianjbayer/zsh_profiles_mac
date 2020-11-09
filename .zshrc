@@ -3,7 +3,14 @@
 ###################################
 
 ### ENV ###
+# For RUBY
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
+# For Node Version Manager NVM from homebrew intsall instructions
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
+
 
 ### ALIASES ###
 alias lsa='ls -al '
